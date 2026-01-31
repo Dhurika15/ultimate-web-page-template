@@ -1,0 +1,340 @@
+/*
+ Copyright (c) 2026 Ashraf Morningstar
+ These are personal recreations of existing projects, developed by Ashraf Morningstar
+ for learning and skill development.
+ Original project concepts remain the intellectual property of their respective creators.
+ Repository: https://github.com/AshrafMorningstar
+*/
+
+<!--
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - progress bar</title>
+  
+
+<style>
+:root {
+    --primary: #00f2fe;
+    --secondary: #4facfe;
+    --bg-dark: rgba(10, 10, 20, 0.85);
+    --glass: rgba(255, 255, 255, 0.1);
+    --neon-border: rgba(0, 242, 254, 0.5);
+}
+
+body {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1b 100%) !important;
+    color: #e0e0e0 !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+    backdrop-filter: blur(10px);
+}
+
+.neo-glass, button, input, .card, div[class*="container"] {
+    background: var(--glass) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid var(--neon-border) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1) !important;
+    background: var(--primary) !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px var(--primary) !important;
+}
+
+button:active {
+    transform: scale(0.95) !important;
+}
+
+* {
+    transition: transform 0.3s ease, background 0.3s ease !important;
+}
+</style>
+<style>
+
+/* NEON-GLASS FUTURISTIC THEME INJECTED BY MASTER BOT */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --neon-cyan: #00f3ff;
+    --neon-purple: #bc13fe;
+    --deep-space: #050510;
+    --text-glow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+body {
+    background-color: var(--deep-space);
+    color: #e0e0ff;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(188, 19, 254, 0.1), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.1), transparent 25%);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Containers */
+.card, .container, section, header, footer, div[class*="box"], div[class*="wrapper"] {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hover Effects */
+.card:hover, .container:hover, button:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px 0 rgba(0, 243, 255, 0.2);
+    border-color: var(--neon-cyan);
+}
+
+/* Futuristic Buttons */
+button, .btn, a.button {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    border: 1px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+button:hover, .btn:hover {
+    background: var(--neon-cyan);
+    color: var(--deep-space);
+    box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+/* Text Glow */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 15px rgba(255,255,255,0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--deep-space);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--neon-purple);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-cyan);
+}
+
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Progress Bar Example</title>
+
+    <style>
+      .progress-bar {
+        height: 24px;
+        width: 360px;
+        border-radius: 10px;
+        background-color: lightblue;
+        margin: 50px;
+      }
+
+      .progress-bar > div {
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, lightskyblue, blue);
+        background-size: 360px 100%;
+        transition: width 200ms;
+      }
+    </style>
+  <style>
+:root {
+    --primary: #00f2fe;
+    --secondary: #4facfe;
+    --bg-dark: rgba(10, 10, 20, 0.85);
+    --glass: rgba(255, 255, 255, 0.1);
+    --neon-border: rgba(0, 242, 254, 0.5);
+}
+
+body {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1b 100%) !important;
+    color: #e0e0e0 !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+    backdrop-filter: blur(10px);
+}
+
+.neo-glass, button, input, .card, div[class*="container"] {
+    background: var(--glass) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid var(--neon-border) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1) !important;
+    background: var(--primary) !important;
+    color: #000 !important;
+    box-shadow: 0 0 20px var(--primary) !important;
+}
+
+button:active {
+    transform: scale(0.95) !important;
+}
+
+* {
+    transition: transform 0.3s ease, background 0.3s ease !important;
+}
+</style>
+<style>
+
+/* NEON-GLASS FUTURISTIC THEME INJECTED BY MASTER BOT */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --neon-cyan: #00f3ff;
+    --neon-purple: #bc13fe;
+    --deep-space: #050510;
+    --text-glow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+body {
+    background-color: var(--deep-space);
+    color: #e0e0ff;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(188, 19, 254, 0.1), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.1), transparent 25%);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Containers */
+.card, .container, section, header, footer, div[class*="box"], div[class*="wrapper"] {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hover Effects */
+.card:hover, .container:hover, button:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px 0 rgba(0, 243, 255, 0.2);
+    border-color: var(--neon-cyan);
+}
+
+/* Futuristic Buttons */
+button, .btn, a.button {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    border: 1px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px var(--neon-cyan);
+}
+
+button:hover, .btn:hover {
+    background: var(--neon-cyan);
+    color: var(--deep-space);
+    box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+/* Text Glow */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 15px rgba(255,255,255,0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--deep-space);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--neon-purple);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-cyan);
+}
+
+</style>
+</head>
+  <body>
+    <div class="progress-bar">
+      <div></div>
+    </div>
+
+    <script>
+      setInterval(myTimer, 1000);
+
+      function myTimer() {
+        console.log("Interval event");
+        const pb = document.querySelector(".progress-bar > div");
+        let progress = parseInt(pb.style.width, 10);
+        console.log("Widht Before: " + progress);
+        if (progress < 100) {
+          progress = progress + 10;
+        } else {
+          progress = 0;
+        }
+        console.log("Widht After: " + progress);
+        pb.style.width = progress + "%";
+      }
+    </script>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

